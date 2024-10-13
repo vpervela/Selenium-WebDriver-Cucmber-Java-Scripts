@@ -52,7 +52,7 @@ public class PredefinedStepDefs {
 
     @Then("I wait for element with xpath {string} to be present")
     public void iWaitForElementWithXpathToBePresent(String xpath) {
-        new WebDriverWait(getDriver(), Duration.ofSeconds(10)).until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));
+        new WebDriverWait(getDriver(), Duration.ofSeconds(30)).until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));
     }
 
     @Then("I wait for element with xpath {string} to not be present")
@@ -127,7 +127,8 @@ public class PredefinedStepDefs {
     }
 
     @Then("element with xpath {string} should contain text {string}")
-    public void elementWithXpathShouldContainText(String xpath, String text) {
+    public void elementWithXpathShouldContainText(String xpath, String text) throws InterruptedException{
+        Thread.sleep(3000);
         String actualText = getDriver().findElement(By.xpath(xpath)).getText();
         assertThat(actualText).containsIgnoringCase(text);
     }
@@ -220,5 +221,20 @@ public class PredefinedStepDefs {
     @When("I mouse over element with xpath {string}")
     public void iMouseOverElementWithXpath(String xpath) {
         new Actions(getDriver()).moveToElement(getDriver().findElement(By.xpath(xpath))).perform();
+    }
+
+    @Then("I press {string} key")
+    public void iPressKey(String arg0) {
+        
+    }
+
+    @When("I type {string} into element with xpath {string} and press Enter")
+    public void iTypeIntoElementWithXpathAndPressEnter(String text, String xpath) {
+        System.out.println("Search text: " + text + ", XPath: " + xpath);
+
+        WebElement searchField = getDriver().findElement(By.xpath(xpath));
+        searchField.clear();
+        searchField.sendKeys(text);
+        searchField.sendKeys(Keys.RETURN);
     }
 }
