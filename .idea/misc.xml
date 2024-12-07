@@ -7,6 +7,12 @@
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
+<<<<<<< HEAD
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="openjdk-18" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+=======
+>>>>>>> 16262e2767d759f5267f62b7563a2aea12a10abf
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_22" default="true" project-jdk-name="openjdk-18" project-jdk-type="JavaSDK" />
 </project>

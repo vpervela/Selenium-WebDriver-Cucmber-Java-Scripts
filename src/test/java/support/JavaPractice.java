@@ -1,6 +1,8 @@
 package support;
 
 public class JavaPractice {
+<<<<<<< HEAD
+=======
 
 
     public static void printStuff(String str, int var, boolean b){
@@ -48,4 +50,5 @@ public class JavaPractice {
 
 
     }
+>>>>>>> 16262e2767d759f5267f62b7563a2aea12a10abf
 }
