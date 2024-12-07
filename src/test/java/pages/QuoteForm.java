@@ -57,6 +57,14 @@ public class QuoteForm extends Page {
     @FindBy(xpath = "//input[@name='contactPersonPhone']")
     private WebElement contactPersonPhone;
 
+    //related document selectors
+    @FindBy(xpath = "//button[contains(@onclick,'new_window')]")
+    private WebElement relatedDocumentButton;
+
+    @FindBy(xpath = "//li[text()='Document 2']")
+    //@FindBy(xpath = "//body/ul]")
+    private WebElement relatedDocumentList;
+
 
     //methods
 
@@ -114,4 +122,22 @@ public class QuoteForm extends Page {
     }
 
 
+    public boolean isRelatedDocumentPresent(String documentName) {
+        String mainWindowHandle = driver.getWindowHandle();
+        relatedDocumentButton.click();
+//        for(String handle : driver.getWindowHandles()){
+//            driver.switchTo().window(handle);
+//        }
+//        String[] handles = driver.getWindowHandles().toArray(new String[0]);
+//        int lastIndex = handles.length - 1;
+//        driver.switchTo().window(handles[lastIndex]);
+        //above can be written like this
+        driver.getWindowHandles().forEach(handle -> driver.switchTo().window(handle));
+        //System.out.println(relatedDocumentList.getText());
+        boolean isDocumentPresent = relatedDocumentList.getText().contains(documentName);
+        //switch to original window
+        driver.switchTo().window(mainWindowHandle);
+        return isDocumentPresent;
+
+    }
 }

@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.QuoteForm;
+import pages.QuotePOM;
 import pages.QuoteResult;
 import support.DriverFactory;
 
@@ -20,6 +21,7 @@ public class MyQuoteOOPStepdefs {
     WebDriver driver = DriverFactory.getDriver();
     QuoteForm quoteForm = new QuoteForm();
     QuoteResult quoteResult = new QuoteResult();
+    QuotePOM quotePOM = new QuotePOM();
 
     @Given("I navigate to {string} page oop")
     public void iNavigateToPageOop(String pageName) {
@@ -121,4 +123,42 @@ public class MyQuoteOOPStepdefs {
         assertThat(quoteResult.getContactPersonName()).isEqualTo(contactName);
         assertThat(quoteResult.getContactPersonPhone()).isEqualTo(contactPhone);
     }
+
+    @Then("I verify that {string} present in related documents")
+    public void iVerifyThatPresentInRelatedDocuments(String documentName) {
+        //validate related documents
+        assertThat(quoteForm.isRelatedDocumentPresent(documentName)).isTrue();
+    }
+
+    @Given("I navigate to quote page oop")
+    public void iNavigateToQuotePageOop() {
+        quotePOM.openQuoteForm();
+    }
+
+    @Then("I go to iframe oop")
+    public void iGoToIframeOop() {
+        quotePOM.goInsideIframe();
+    }
+
+    @And("I type contact person name {string} oop")
+    public void iTypeContactPersonNameOop(String name) {
+        quotePOM.typeContactPersonName(name);
+    }
+
+    @And("I type contact person phone {string} oop")
+    public void iTypeContactPersonPhoneOop(String phone) {
+        quotePOM.typeContactPersonPhone(phone);
+    }
+
+    @And("I go outside iframe oop")
+    public void iGoOutsideIframeOop() {
+        quotePOM.goOutOfIframe();
+    }
+
+    @And("I type name {string} oop")
+    public void iTypeNameOop(String name) {
+        quotePOM.typeName(name);
+    }
+
+
 }

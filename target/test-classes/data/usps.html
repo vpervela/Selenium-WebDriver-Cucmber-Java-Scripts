@@ -1,0 +1,888 @@
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" xpath="1"><head>
+    <title>Search Results Page | USPS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="NOINDEX,NOFOLLOW">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./lib/css/bootstrap.min-v4.3.1.css">
+    <link rel="stylesheet" href="./lib/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./lib/css/jquery-ui.css">
+    <link rel="stylesheet" href="./css/searchResult-min-v2.css">
+    <link rel="stylesheet" href="./css/elements.css">
+    <link rel="stylesheet" href="./css/main-sb.css">
+
+    <style>
+
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+           .floating-viewer-arrow, .floating-viewer {
+               display: none !important;
+           }
+         }
+
+       .container-fluid {
+           max-width: 1500px;
+           padding-right: 0px;
+           padding-left: 0px;
+       }
+
+
+
+    </style><script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/0ccfa671/www-widgetapi.vflset/www-widgetapi.js" async=""></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-3NXP3C8S9V&amp;l=dataLayer&amp;cx=c&amp;gtm=45He4bc0v72384666za200"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-K2FRZL4&amp;l=dataLayer&amp;gtm=45He4bc0v72384666za200"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-QM3XHZ2B95&amp;l=dataLayer&amp;cx=c&amp;gtm=45He4bc0v72384666za200"></script><script src="https://www.youtube.com/iframe_api"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-CSLL4ZEK4L&amp;l=dataLayer&amp;cx=c&amp;gtm=45He4bc0v9195344747za200"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-T8WZCQ9B"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MVCC8H"></script><script type="text/javascript" async="" src="https://fast.fonts.net/t/trackingCode.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="header" data-requiremodule="require-jquery" src="https://www.usps.com/global-elements/lib/script/require-jquery.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="header" data-requiremodule="helpers" src="https://www.usps.com/global-elements/lib/script/helpers.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="header" data-requiremodule="search-fe" src="https://www.usps.com/global-elements/header/script/search-fe.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="header" data-requiremodule="jquery" src="https://www.usps.com/global-elements/footer/script/jquery-3.7.1.js"></script><link type="text/css" rel="stylesheet" href="https://fast.fonts.net/t/1.css?apiType=css&amp;projectid=f3e4655b-fd06-4b8b-8a25-01c859692612"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="global" data-requiremodule="resize-manager" src="https://www.usps.com/global-elements/lib/script/resize-manager.js"></script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-CSLL4ZEK4L"></script><style type="text/css" id="kampyleStyle">.noOutline{outline: none !important;}.wcagOutline:focus{outline: 1px dashed #595959 !important;outline-offset: 2px !important;transition: none !important;}button#nebula_div_btn { height: auto } .kampyle_vertical_button { background-color:transparent;font-family:"Open Sans",sans-serif;cursor:pointer;position:fixed;bottom:30.100000000000023px;z-index:99999990;height:35px;min-height:35px;max-height:35px;width:125px;max-width:125px;min-width:125px;-ms-transform:rotate(90deg);-webkit-transform:rotate(90deg);transform:rotate(90deg) } .kampyle_vertical_button .kampyle_button { height:35px;min-height:35px;;max-height:35px;width:125px;min-width:125px;max-width:125px; background:#333366;color:#ffffff;position:absolute;top:0;left:0;z-index:-1; } .kampyle_vertical_button .kampyle_button-text { color:#ffffff;font-size:14px;line-height:35px;text-align:center;font-weight:normal; } .kampyle_vertical_button.kampyle_left .kampyle_button { -webkit-border-radius:3px 3px 0 0;-moz-border-radius:3px 3px 0 0;-ms-border-radius:3px 3px 0 0;border-radius:3px 3px 0 0; } .kampyle_vertical_button.kampyle_right { right:-45px; } .kampyle_vertical_button.kampyle_left { left:-45px; } .kampyle_vertical_button.kampyle_right .kampyle_button { -webkit-border-radius:0 0 3px 3px;-moz-border-radius:0 0 3px 3px;-ms-border-radius:0 0 3px 3px;border-radius:0 0 3px 3px } .kampyle_vertical_button.kampyle_right, .kampyle_vertical_button.kampyle_left  { padding: 0; }.kampyle_vertical_button:hover .kampyle_button-text { color:#ffffff; } .kampyle_vertical_button:hover .kampyle_button { background-color:#333366; }</style></head>
+
+
+<body>
+<!-- header-->
+
+<link href="/global-elements/header/css/megamenu-v4.css" type="text/css" rel="stylesheet"> <style>
+    body{min-width:0!important;overflow-x:hidden;}
+    a{text-decoration:none;}
+
+  /*
+  @media (min-width: 958px){.global--navigation~.g-alert, .g-alert~.g-alert, .g-alert {
+  margin-bottom: 20px;
+      margin-top: 0;
+      }
+                        div#g-navigation {
+   margin-bottom: 0;
+  }
+  }
+  .hidden-galert {
+     position: absolute;
+      left: -10000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+  }
+  @media (max-width: 958px) {
+  .g-alert p br { display:none;}
+  }
+
+  */
+  a.hidden-skip {
+      position: absolute;
+      left: -10000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+  }
+  .col-12.d-md-none.result-list-wrapper {
+       display:none!important;
+  }
+
+
+  /* adding the Print Customs Forms image */
+  @media only screen and (min-width: 959px) {
+  .global--navigation nav .tool-international-forms a:before, .global--navigation nav .tool-international-forms a:hover:before, .global--navigation nav .tool-international-forms a:focus:before {
+      background: url(https://www.usps.com/assets/images/home/printcustomsforms.svg);
+  }
+  }
+
+  /* end adding the Print Customs Forms image */
+  /* Business Search Bar Spacing */
+  form.search.global-header--search.business-bottom {margin-top: 25px!important;}
+  /* Ending Business Search Bar Spacing */
+
+</style>
+<script>var appID = "Phoenix";</script>
+
+<div class="nav-utility" id="nav-utility">
+    <div class="utility-links" id="utility-header">
+        <a tabindex="-1" href="https://www.usps.com/globals/site-index.htm" class="hidden-skip">Go to USPS.com Site Index.</a>
+        <a tabindex="0" id="skiptomain" href="#endnav" class="hidden-skip keyboard">Skip to Main Content</a>
+        <a tabindex="-1" name="skiputil" id="skiputil" href="#skipallnav" class="hidden-skip">Skip All Utility Navigation</a>
+        <div class="lang-select">
+            <a id="link-lang" href="#">
+                <span class="visuallyhidden">Current language:</span>
+                English
+            </a>
+            <ul class="lang-list">
+                <li class="lang-option">
+                    <a class="multi-lang-link" tabindex="-1" href="javascript:OneLink('en');">English</a>
+                </li>
+                <li class="lang-option">
+                    <a class="multi-lang-link" tabindex="-1" href="javascript:OneLink('es');">Español</a>
+                </li>
+                <li class="lang-option last">
+                    <a class="multi-lang-link" tabindex="-1" href="javascript:OneLink('zh');"><span class="visuallyhidden">Chinese</span></a>
+                </li>
+            </ul>
+        </div>
+        <a id="link-locator" href="https://tools.usps.com/locations/">Locations</a>
+        <a id="link-customer" href="https://www.usps.com/help/contact-us.htm">Support</a>
+        <a id="link-myusps" href="https://informeddelivery.usps.com">Informed Delivery</a>
+        <a id="login-register-header" class="link-reg" href="https://reg.usps.com/entreg/LoginAction_input?app=Phoenix&amp;appURL=https://www.usps.com/search/results.htm">Register / Sign In</a>
+        <div id="link-cart" style="display: inline-block;"></div>
+    </div>
+</div>
+<div class="global--navigation" id="g-navigation">
+    <a tabindex="-1" name="skipallnav" id="skipallnav" href="#endnav" class="hidden-skip">Skip all category navigation links</a>
+    <div class="nav-full">
+        <a class="global-logo" href="https://www.usps.com/" style="vertical-align: baseline;">
+            <img src="https://www.usps.com/global-elements/header/images/utility-header/logo-sb.svg" alt="Image of USPS.com logo." aria-label="Image of USPS.com logo.">
+        </a>
+        <div class="mobile-header">
+            <a class="mobile-hamburger" href="#"><img src="https://www.usps.com/assets/images/home/hamburger.svg" alt="hamburger menu Icon"></a>
+            <a class="mobile-logo" href="https://www.usps.com/"><img src="https://www.usps.com/assets/images/home/logo_mobile.svg" alt="USPS mobile logo"></a>
+            <a class="mobile-search" href="#"><img src="https://www.usps.com/assets/images/home/search.svg" alt="Search Icon"></a>
+        </div>
+
+        <nav>
+            <div class="mobile-log-state">
+                <div id="msign" class="mobile-utility">
+                    <div class="mobile-sign"><a href="https://reg.usps.com/entreg/LoginAction_input?app=Phoenix&amp;appURL=https://www.usps.com/search/results.htm">Sign In</a></div>
+                </div>
+            </div>
+            <ul class="nav-list" role="menubar">
+                <li class="qt-nav menuheader">
+                    <a tabindex="-1" name="navquicktools" id="navquicktools" href="#navmailship" class="hidden-skip">Skip Quick Tools Links</a>
+                    <a aria-expanded="false" role="menuitem" tabindex="0" aria-haspopup="true" class="nav-first-element menuitem" href="#">Quick Tools</a>
+                    <div class="">
+                        <ul role="menu" aria-hidden="true">
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="https://tools.usps.com/go/TrackConfirmAction_input">
+                                    <img src="https://www.usps.com/assets/images/home/tracking.svg" alt="Tracking Icon">
+                                    <p>Track a Package</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="https://informeddelivery.usps.com/">
+                                    <img src="https://www.usps.com/global-elements/header/images/utility-header/mailman.svg" alt="Informed Delivery Icon">
+                                    <p>Informed Delivery</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="https://tools.usps.com/locations/">
+                                    <img src="https://www.usps.com/assets/images/home/location.svg" alt="Post Office Locator Icon">
+                                    <p>Find USPS Locations</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="https://store.usps.com/store/stamps">
+                                    <img src="https://www.usps.com/assets/images/home/stamps.svg" alt="Stamps Icon">
+                                    <p>Buy Stamps</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="https://tools.usps.com/schedule-pickup-steps.htm">
+                                    <img src="https://www.usps.com/assets/images/home/schedule_pickup.svg" alt="Schedule a Pickup Icon">
+                                    <p>Schedule a Pickup</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="https://postcalc.usps.com/">
+                                    <img src="https://www.usps.com/assets/images/home/calculate_price.svg" alt="Calculate a Price Icon">
+                                    <p>Calculate a Price</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="https://tools.usps.com/zip-code-lookup.htm">
+                                    <img src="https://www.usps.com/assets/images/home/find_zip.svg" alt="Zip Code™ Lookup Icon">
+                                    <p>Look Up a <br>ZIP Code<sup>™</sup></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="https://holdmail.usps.com/holdmail/">
+                                    <img src="https://www.usps.com/assets/images/home/holdmail.svg" alt="Holdmail Icon">
+                                    <p>Hold Mail</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="https://moversguide.usps.com/?referral=MG82">
+                                    <img src="https://www.usps.com/assets/images/home/change_address.svg" alt="Change of Address Icon">
+                                    <p>Change My Address</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="https://www.usps.com/manage/po-boxes.htm">
+                                    <img src="https://www.usps.com/assets/images/home/po_box.svg" alt="Post Office Boxes Icon">
+                                    <p>Rent/Renew a <br>PO Box</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="https://store.usps.com/store/results/free-shipping-supplies/shipping-supplies/_/N-alnx4jZ7d0v8v">
+                                    <img src="https://www.usps.com/assets/images/home/free_boxes.svg" alt="Shipping Supplies Icon">
+                                    <p>Free Boxes</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="https://cns.usps.com/">
+                                    <img src="https://www.usps.com/assets/images/home/featured_clicknship.svg" alt="Click-N-Ship Icon">
+                                    <p>Click-N-Ship</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menuheader">
+                    <a tabindex="-1" name="navmailship" id="navmailship" href="#navtrackmanage" class="hidden-skip">Skip Send Links</a>
+                    <a id="mail-ship-width" aria-expanded="false" class="menuitem" role="menuitem" tabindex="0" aria-haspopup="true" href="https://www.usps.com/ship/">Send</a>
+                    <div class="repos">
+                        <ul role="menu" aria-hidden="true" class="tools">
+                            <h3>Tools</h3>
+                            <li class="tool-cns"><a role="menuitem" tabindex="-1" href="https://cns.usps.com/">Click-N-Ship</a></li>
+                            <li class="tool-stamps"><a role="menuitem" tabindex="-1" href="https://store.usps.com/store/">Stamps &amp; Supplies</a></li>
+                            <li class="tool-zip"><a role="menuitem" tabindex="-1" href="https://tools.usps.com/zip-code-lookup.htm">Look Up a ZIP Code<sup>™</sup></a></li>
+                            <li class="tool-calc"><a role="menuitem" tabindex="-1" href="https://postcalc.usps.com/">Calculate a Price</a></li>
+                            <li class="tool-pick"><a role="menuitem" tabindex="-1" href="https://tools.usps.com/schedule-pickup-steps.htm">Schedule a Pickup</a></li>
+                            <li class="tool-find"><a role="menuitem" tabindex="-1" href="https://tools.usps.com/locations/">Find USPS Locations</a></li>
+                            <li class="tool-track"><a role="menuitem" tabindex="-1" href="https://tools.usps.com/go/TrackConfirmAction_input">Tracking</a></li>
+                        </ul>
+                        <ul role="menu" aria-hidden="true">
+                            <h3>Learn About</h3>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/ship/">Sending</a></li>
+                            <ul aria-hidden="true">
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/ship/letters.htm">Sending Mail</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/ship/packages.htm">Sending Packages</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/ship/insurance-extra-services.htm">Insurance &amp; Extra Services</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/ship/shipping-restrictions.htm">Shipping Restrictions</a></li>
+                            </ul>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/ship/online-shipping.htm">Online Shipping</a></li>
+                            <ul aria-hidden="true">
+                                <li><a role="menuitem" tabindex="-1" href="https://www.uspssmartpackagelockers.com/package-shippers">Ship to USPS Smart Locker</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/ship/label-broker.htm">Label Broker</a></li>
+                            </ul>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/ship/custom-mail.htm">Custom Mail, Cards, &amp; Envelopes</a></li>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/business/prices.htm">Postage Prices</a></li>
+                        </ul>
+                        <ul role="menu" aria-hidden="true">
+                            <h3 class="desktop-only">&nbsp;</h3>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/ship/mail-shipping-services.htm">Mail &amp; Shipping Services</a></li>
+                            <ul aria-hidden="true">
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/ship/priority-mail-express.htm">Priority Mail Express</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/ship/priority-mail.htm">Priority Mail</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/ship/ground-advantage.htm">USPS Ground Advantage</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/ship/first-class-mail.htm">First-Class Mail</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/ship/apo-fpo-dpo.htm">Military &amp; Diplomatic Mail</a></li>
+                            </ul>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/manage/package-intercept.htm">Redirecting a Package</a></li>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/shop/money-orders.htm">Money Orders</a></li>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/help/claims.htm">Filing a Claim</a></li>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/help/refunds.htm">Requesting a Refund</a></li>
+                            <div class="desktop-only mailship-addition"><a role="menuitem" tabindex="-1" href="https://www.usps.com/ship/go-now.htm"><img src="https://www.usps.com/ship/go-now.png" alt=" "><span class="visuallyhidden">Print and ship from home. Start Click-N-Ship.</span></a></div>
+                        </ul>
+
+                        <form method="get" class="search global-header--search" tabindex="-1" action="https://www.usps.com/search">
+			<span aria-hidden="false" tabindex="-1" class="input--wrap">
+				<label tabindex="-1" class="visuallyhidden" for="global-header--search-track-mail-ship">Search USPS.com</label>
+				<input tabindex="-1" autocomplete="off" placeholder="Search or Enter a Tracking Number" class="search--track-input input--field q global-header--search-track" id="global-header--search-track-mail-ship" maxlength="256" name="q" type="text">
+				<div class="autocorrect"><ul aria-hidden="true"></ul></div>
+				<input tabindex="-1" value="Search" class="input--search search--submit" type="submit">
+			</span>
+                        </form>
+                    </div>
+                </li>
+                <li class="menuheader">
+                    <a tabindex="-1" name="navtrackmanage" id="navtrackmanage" href="#navpostalstore" class="hidden-skip">Skip Receive Links</a>
+                    <a aria-expanded="false" class="menuitem" role="menuitem" tabindex="0" aria-haspopup="true" href="https://www.usps.com/manage/">Receive</a>
+                    <div>
+                        <ul role="menu" aria-hidden="true" class="tools">
+                            <h3>Tools</h3>
+                            <li class="tool-track"><a role="menuitem" tabindex="-1" href="https://tools.usps.com/go/TrackConfirmAction_input">Tracking</a></li>
+                            <li class="tool-informed"><a role="menuitem" tabindex="-1" href="https://informeddelivery.usps.com">Informed Delivery</a></li>
+                            <li class="tool-intercept"><a role="menuitem" tabindex="-1" href="https://retail-pi.usps.com/retailpi/actions/index.action">Intercept a Package</a></li>
+                            <li class="tool-redelivery"><a role="menuitem" tabindex="-1" href="https://tools.usps.com/redelivery.htm">Schedule a Redelivery</a></li>
+                            <li class="tool-hold"><a role="menuitem" tabindex="-1" href="https://holdmail.usps.com/holdmail/">Hold Mail</a></li>
+                            <li class="tool-change"><a role="menuitem" tabindex="-1" href="https://moversguide.usps.com/?referral=MG80">Change of Address</a></li>
+                            <li class="tool-pobol"><a role="menuitem" tabindex="-1" href="https://www.usps.com/manage/po-boxes.htm">Rent or Renew PO Box</a></li>
+                        </ul>
+                        <ul role="menu" aria-hidden="true">
+                            <h3>Learn About</h3>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/manage/">Managing Mail</a></li>
+                            <li><a role="menuitem" tabindex="-1" href="https://informeddelivery.usps.com/">Informed Delivery</a></li>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/manage/forward.htm">Forwarding Mail</a></li>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/manage/package-intercept.htm">Redirecting a Package</a></li>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.uspssmartpackagelockers.com/package-recipients">USPS Smart Lockers</a></li>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/manage/po-boxes.htm">PO Boxes</a></li>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/manage/mailboxes.htm">Mailbox Guidelines</a></li>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/manage/mail-for-deceased.htm">Mail for the Deceased</a></li>
+                            <div class="desktop-only manage-addition"><a role="menuitem" tabindex="-1" href="https://www.usps.com/manage/go-now.htm"><img src="https://www.usps.com/manage/go-now.png" alt=" "></a></div>
+                        </ul>
+                        <form tabindex="-1" role="search" method="get" class="search global-header--search  track-manage" action="https://www.usps.com/search">
+			<span tabindex="-1" aria-hidden="false" class="input--wrap">
+				<label tabindex="-1" class="visuallyhidden" for="global-header--search-track-track-manage">Search USPS.com</label>
+				<input tabindex="-1" autocomplete="off" placeholder="Search or Enter a Tracking Number" class="search--track-input input--field q global-header--search-track" id="global-header--search-track-track-manage" maxlength="256" name="q" type="text">
+				<div class="autocorrect"><ul aria-hidden="true"></ul></div>
+				<input tabindex="-1" value="Search" class="input--search search--submit" type="submit">
+			</span>
+                        </form>
+                    </div>
+                </li>
+                <li class="menuheader">
+                    <a tabindex="-1" name="navpostalstore" id="navpostalstore" href="#navbusiness" class="hidden-skip">Skip Shop Links</a>
+                    <a aria-expanded="false" class="menuitem" role="menuitem" tabindex="0" aria-haspopup="true" href="https://store.usps.com/store">Shop</a>
+                    <div class="repos">
+                        <ul role="menu" aria-hidden="true" class="tools">
+                            <h3>Shop</h3>
+
+
+                            <li class="tool-stamps"><a role="menuitem" tabindex="-1" href="https://store.usps.com/store/stamps">Stamps</a></li>
+                            <li class="tool-supplies"><a role="menuitem" tabindex="-1" href="https://store.usps.com/store/shipping-supplies">Shipping Supplies</a></li>
+                            <li class="tool-cards"><a role="menuitem" tabindex="-1" href="https://store.usps.com/store/cards-envelopes">Cards &amp; Envelopes</a></li>
+                            <li class="tool-pse"><a role="menuitem" tabindex="-1" href="https://store.usps.com/store/pse/">Personalized Stamped Envelopes</a></li>
+                            <li class="tool-coll"><a role="menuitem" tabindex="-1" href="https://store.usps.com/store/collectors">Collectors</a></li>
+                            <li class="tool-gifts"><a role="menuitem" tabindex="-1" href="https://store.usps.com/store/gifts">Gifts</a></li>
+                            <li class="tool-business"><a role="menuitem" tabindex="-1" href="https://store.usps.com/store/business-supplies">Business Supplies</a></li>
+                        </ul>
+
+                        <ul role="menu" aria-hidden="true">
+                            <h3>Learn About</h3>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/shop/money-orders.htm">Money Orders</a></li>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/shop/returns-exchanges.htm">Returns &amp; Exchanges</a></li>
+                            <div class="desktop-only shop-addition">
+                                <a role="menuitem" tabindex="-1" href="https://www.usps.com/store/go-now.htm"><img src="https://www.usps.com/store/go-now.png" alt=" "><span class="visuallyhidden">Shop Forever Stamps. Shop now.</span></a>
+                            </div>
+                        </ul>
+                        <form tabindex="-1" role="search" method="get" class="search global-header--search" action="https://www.usps.com/search">
+			<span tabindex="-1" aria-hidden="false" class="input--wrap">
+				<label class="visuallyhidden" tabindex="-1" for="global-header--search-track-store">Search the Postal Store: Keyword or SKU</label>
+				<input tabindex="-1" autocomplete="off" placeholder="Search the Postal Store: Keyword or SKU" class="search--track-input input--field q global-header--search-track" id="global-header--search-track-store" maxlength="256" name="q" type="text">
+				<div class="autocorrect"><ul aria-hidden="true"></ul></div>
+				<input tabindex="-1" value="Search" class="input--search search--submit" type="submit">
+			</span>
+                        </form>
+                    </div>
+                </li>
+                <li class="menuheader">
+                    <a tabindex="-1" name="navbusiness" id="navbusiness" href="#navinternational" class="hidden-skip">Skip Business Links</a>
+                    <a aria-expanded="false" class="menuitem" tabindex="0" aria-haspopup="true" role="menuitem" href="https://www.usps.com/business/">Business</a>
+                    <div class="repos">
+                        <ul role="menu" aria-hidden="true" class="tools">
+                            <h3>Tools</h3>
+                            <li class="tool-calc"><a role="menuitem" tabindex="-1" href="https://postcalc.usps.com/business">Calculate a Business Price</a></li>
+                            <li class="tool-eddm"><a role="menuitem" tabindex="-1" href="https://eddm.usps.com/eddm/customer/routeSearch.action">Every Door Direct Mail</a></li>
+                            <div class="desktop-only business-addition">
+                                <a role="menuitem" tabindex="-1" href="https://www.usps.com/business/go-now.htm"><img src="https://www.usps.com/business/go-now.png" alt=" "><span class="visuallyhidden">Grow your business with Every Door Direct Mail. Try EDDM now.</span></a>
+                            </div>
+                        </ul>
+
+                        <ul role="menu" aria-hidden="true">
+                            <h3>Learn About</h3>
+
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/business/business-shipping.htm">Business Shipping</a></li>
+                            <ul aria-hidden="true">
+                                <li><a role="menuitem" tabindex="-1" href="https://www.uspssmartpackagelockers.com/business">Ship to USPS Smart Locker</a></li>
+                            </ul>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/business/advertise-with-mail.htm">Advertising with Mail</a></li>
+                            <ul aria-hidden="true">
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/business/every-door-direct-mail.htm">Using EDDM</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/business/vendors.htm">Mailing &amp; Printing Services</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/business/customized-direct-mail.htm">Customized Direct Mail</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/business/political-mail.htm">Political Mail</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/business/promotions-incentives.htm">Promotions &amp; Incentives</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/business/informed-delivery.htm">Informed Delivery Marketing</a></li>
+                            </ul>
+                        </ul>
+                        <ul role="menu" aria-hidden="true">
+                            <h3 class="desktop-only">&nbsp;</h3>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/business/connect/">USPS Connect</a></li>
+                            <ul aria-hidden="true">
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/business/connect/ecommerce.htm">eCommerce</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/business/connect/local.htm">Local</a></li>
+                            </ul>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/business/postage-options.htm">Postage Options</a></li>
+                            <ul aria-hidden="true">
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/business/verify-postage.htm">Verifying Postage</a></li>
+                            </ul>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/business/return-services.htm">Returns Services</a></li>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/business/label-broker.htm">Label Broker for Business</a></li>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/business/international-shipping.htm">International Business Shipping</a></li>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/business/manage-mail.htm">Managing Business Mail</a></li>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/business/web-tools-apis/">USPS &amp; Web Tools APIs</a></li>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/business/prices.htm">Prices</a></li>
+                        </ul>
+                        <form tabindex="-1" role="search" method="get" class="search global-header--search business-bottom" action="https://www.usps.com/search">
+			<span tabindex="-1" aria-hidden="false" class="input--wrap">
+				<label tabindex="-1" class="visuallyhidden" for="global-header--search-track-business">Search USPS.com</label>
+				<input tabindex="-1" autocomplete="off" placeholder="Search or Enter a Tracking Number" class="search--track-input input--field q global-header--search-track" id="global-header--search-track-business" maxlength="256" name="q" type="text">
+				<div class="autocorrect"><ul aria-hidden="true"></ul></div>
+				<input tabindex="-1" value="Search" class="input--search search--submit" type="submit">
+			</span>
+                        </form>
+                    </div>
+                </li>
+                <li class="menuheader">
+                    <a tabindex="-1" name="navinternational" id="navinternational" href="#navhelp" class="hidden-skip">Skip International Links</a>
+                    <a class="menuitem" tabindex="0" aria-expanded="false" aria-haspopup="true" role="menuitem" href="https://www.usps.com/international/">International</a>
+                    <div class="repos">
+                        <ul role="menu" aria-hidden="true" class="tools">
+                            <h3>Tools</h3>
+
+                            <li class="tool-calc"><a role="menuitem" tabindex="-1" href="https://postcalc.usps.com/?country=10440">Calculate International Prices</a></li>
+                            <li class="tool-international-labels"><a role="menuitem" tabindex="-1" href="https://cns.usps.com/">Print International Labels</a></li>
+                            <li class="tool-international-forms"><a role="menuitem" tabindex="-1" href="https://cfo.usps.com/cfo-web/labelInformation.html">Print Customs Forms</a></li>
+                            <div class="desktop-only international-addition">
+                                <a role="menuitem" tabindex="-1" href="https://www.usps.com/international/go-now.htm"><img src="https://www.usps.com/international/go-now.png" alt=" "><span class="visuallyhidden">Use our online scheduler to make a passport appointment. Schedule Today.</span></a>
+                            </div>
+                        </ul>
+
+                        <ul role="menu" aria-hidden="true">
+                            <h3>Learn About</h3>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/international/">International Sending</a></li>
+                            <ul aria-hidden="true">
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/international/letters.htm">How to Send a Letter Internationally</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/international/preparing-international-shipments.htm">How to Send a Package Internationally</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/international/shipping-restrictions.htm">International Shipping Restrictions</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/international/international-how-to.htm">Shipping Internationally Online</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/international/insurance-extra-services.htm">International Insurance &amp; Extra Services</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/international/customs-forms.htm">Completing Customs Forms</a></li>
+                            </ul>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/ship/apo-fpo-dpo.htm?pov=international">Military &amp; Diplomatic Mail</a></li>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/international/money-transfers.htm">Sending Money Abroad</a></li>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/international/passports.htm">Passports</a></li>
+                        </ul>
+                        <ul role="menu" aria-hidden="true">
+                            <h3 class="desktop-only">&nbsp;</h3>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/international/mail-shipping-services.htm">Comparing International Shipping Services</a></li>
+                            <ul aria-hidden="true">
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/international/priority-mail-express-international.htm">Priority Mail Express International</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/international/priority-mail-international.htm">Priority Mail International</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/international/first-class-package-international-service.htm">First-Class Package International Service</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/international/first-class-mail-international.htm">First-Class Mail International</a></li>
+
+                            </ul>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/help/international-claims.htm">Filing an International Claim</a></li>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/help/international-refunds.htm">Requesting an International Refund</a></li>
+                        </ul>
+                        <form tabindex="-1" role="search" method="get" class="search global-header--search" action="https://www.usps.com/search">
+		<span tabindex="-1" aria-hidden="false" class="input--wrap">
+			<label tabindex="-1" class="visuallyhidden" for="global-header--search-track-international">Search USPS.com</label>
+			<input tabindex="-1" autocomplete="off" placeholder="Search or Enter a Tracking Number" class="search--track-input input--field q global-header--search-track" id="global-header--search-track-international" maxlength="256" name="q" type="text">
+			<div class="autocorrect"><ul aria-hidden="true"></ul></div>
+			<input tabindex="-1" value="Search" class="input--search search--submit" type="submit">
+		</span>
+                        </form>
+                    </div>
+                </li>
+                <li class="menuheader">
+                    <a tabindex="-1" name="navhelp" id="navhelp" href="#navsearch" class="hidden-skip">Skip Help Links</a>
+                    <a aria-expanded="false" class="menuitem" tabindex="0" aria-haspopup="true" role="menuitem" href="https://faq.usps.com/s/">Help</a>
+                    <div class="repos">
+                        <ul role="menu" aria-hidden="true">
+                            <li><a role="menuitem" tabindex="-1" href="https://faq.usps.com/s/">FAQs</a></li>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/help/missing-mail.htm">Finding Missing Mail</a></li>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/help/claims.htm">Filing a Claim</a></li>
+                            <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/help/refunds.htm">Requesting a Refund</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-search menuheader active">
+                    <a tabindex="-1" name="navsearch" id="navsearch" href="#endnav" class="hidden-skip">Skip Search</a>
+                    <a aria-expanded="true" class="menuitem active" tabindex="0" aria-haspopup="true" role="menuitem" href="#">Search USPS.com</a>
+                    <div class="repos">
+                        <!-- Search -->
+                        <span aria-hidden="false" class="input--wrap-label">
+			<label class="visuallyhidden" for="styleguide-header--search-track">Search USPS.com</label>
+		</span>
+
+                        <form tabindex="-1" role="search" method="get" class="search global-header--search" action="https://www.usps.com/search/results.htm?PNO=1&amp;keyword=" data-gtm-form-interact-id="0">
+			<span tabindex="-1" aria-hidden="false" class="input--wrap" style="overflow: visible;">
+				<label tabindex="-1" class="visuallyhidden" for="global-header--search-track-search">Search USPS.com</label>
+				<input tabindex="-1" autocomplete="off" placeholder="Search or Enter a Tracking Number" class="search--track-input input--field q global-header--search-track" id="global-header--search-track-search" maxlength="256" name="q" type="text" data-gtm-form-interact-field-id="0">
+				<div class="autocorrect" style="height: 145px;"><ul aria-hidden="true"><li><a tabindex="-1"><strong>boxes</strong></a></li><li><a tabindex="-1">flat rate <strong>boxes</strong></a></li><li><a tabindex="-1">po <strong>boxes</strong></a></li></ul></div>
+				<input tabindex="-1" value="Search" class="input--search search--submit" type="submit">
+			</span>
+                        </form>
+
+                        <div class="empty-search">
+                            <p>Top Searches</p>
+                            <ul aria-hidden="true">
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/search/results.htm?PNO=1&amp;keyword=PO%20Boxes">PO BOXES</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/search/results.htm?PNO=1&amp;keyword=Passports">PASSPORTS</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/search/results.htm?PNO=1&amp;keyword=Free%20Boxes">FREE BOXES</a></li>
+                            </ul>
+                        </div>
+                        <!-- END Search -->
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+
+
+        <div class="search--wrapper-hidden" id="search--display">
+			<span aria-hidden="false" class="input--wrap-label">
+			</span>
+            <form role="search" method="get" class="search global-header--search" action="https://www.usps.com/search/results.htm?PNO=1&amp;keyword=">
+			<span aria-hidden="false" class="input--wrap">
+				<div class="easy-autocomplete search-box">
+					<label class="visuallyhidden" for="global-header--search-track-mob-search">Enter Search term for Search USPS.com</label>
+					<input autocomplete="off" placeholder="Search or Enter a Tracking Number" class="search--track-input input--field q fsrVisible global-header--search-track" id="global-header--search-track-mob-search" maxlength="256" name="q" type="text">
+					<input value="Search" class="input--search search--submit" type="submit">
+				</div>
+                    <div class="autocorrect"><ul></ul></div>
+			</span>
+            </form>
+
+            <div class="empty-search">
+                <p>Top Searches</p>
+                <ul>
+                    <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/search/results.htm?PNO=1&amp;keyword=PO%20Boxes">PO BOXES</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/search/results.htm?PNO=1&amp;keyword=Passports">PASSPORTS</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="https://www.usps.com/search/results.htm?PNO=1&amp;keyword=Free%20Boxes">FREE BOXES</a></li>
+                </ul>
+            </div>
+        </div>
+        <a name="endnav" id="endnav" href="#" class="hidden-skip">&nbsp;</a>
+    </div></div>
+
+
+<script type="text/javascript" src="/global-elements/footer/script/jquery-3.7.1.js"></script>
+<script src="/global-elements/lib/script/modernizr/modernizr.js"></script>
+<script type="text/javascript" src="/global-elements/header/script/megamenu-v3.js"></script>
+<script type="text/javascript" src="https://www.usps.com/ContentTemplates/common/scripts/OneLinkUsps.js"></script>
+<script type="text/javascript" src="/global-elements/header/script/ge-login.js"></script>
+<script src="/global-elements/lib/script/requirejs/require-2.3.6.js"></script>
+<script src="/global-elements/header/script/header-search.js"></script>
+<script src="https://www.usps.com/assets/script/home/megamenu-additions.js"></script>
+
+<!-- End of header-->
+
+<!-- white spinner-->
+<div class="white-spinner-wrapper" style="display: none;">
+    <div class="white-spinner-container">
+        <div class="spinner-content">
+            <h5>Processing</h5>
+            <div class="white-spinner-progress">
+				<span class="white-spinner">
+					<div class="spinner">
+						<div class="bar-1"></div>
+						<div class="bar-2"></div>
+						<div class="bar-3"></div>
+						<div class="bar-4"></div>
+						<div class="bar-5"></div>
+					</div>
+				</span>
+            </div>
+            <!--<p>Optional Supporting Text</p>-->
+        </div>
+        <div class="gray-overlay"></div>
+    </div>
+</div>
+
+<div class="endeca-search-input-box">
+    <div class="col-12 search-input-wrapper">
+        <div class="col-md-8 col-12 form-group mobile-input-search adjust-search-input">
+            <input id="autoCompleteSearchInputBox" class="col-xs-12 ui-autocomplete-input" autocomplete="off" placeholder="Search or Enter a Tracking Number">
+            <input type="submit" class="submit-search col-xs-12" value="">
+        </div>
+    </div>
+</div>
+
+<div id="searchAdjust" class="container-fluid" style="display: none;"></div>
+
+<div class="container-fluid">
+
+    <!--<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group endeca-search-input-box">
+        <div class="col-lg-7 col-md-7 hidden-sm hidden-xs form-group desktop adjust-search-input path">
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 form-group mobile-input-search adjust-search-input">
+            <input maxlength="256" id="autoCompleteSearchInputBox" class=" col-xs-12 ui-autocomplete-input" autocomplete="off" placeholder="Search or Enter a Tracking Number">
+            <input type="submit" class="submit-search col-xs-12" value="">
+        </div>
+    </div>-->
+
+
+    <div id="my_row_1" class="col-12 form-group" style="display: inline-block;">
+        <a tabindex="-1" id="skipCategory" href="#skipRecommended" class="hidden-skip">Skip Search Filters.</a>
+        <div id="dyn_nav" class="col-12 col-md-4 form-group desktop">
+            <!--<a class="hide-filters mobile" href="#" tabindex="-1">
+                <img src="https://www.usps.com/assets/images/search/left_arrow.png"> Back</a>-->
+            <a href="#" type="button" class="close hide-filters mobile" data-dismiss="modal" tabindex="0"><span class="visuallyhidden">Close Modal</span></a>
+            <div id="dyn_nav_col"><div class="dn-attr-hdr column-item" href="#"><h4><span class="dn-attr-hdr-txt" title="Filter by Media Type">Filter by Media Type</span></h4></div><ul id="attr_0" class="dn-attr collapse show"><li class="dn-attr-v"><span class="dn-overflow dn-inline-block" style="width: 86%;" title="All Results"><div class="dn-attr-txt"><a id="" class="allresults" href=""><p class="checkbox-container"><input type="checkbox" id="first-category-checkbox" checked=""><label class="checkbox-label selected" for="first-category-checkbox">All Results</label></p></a></div></span></li><li class="dn-attr-v"><div class="dn-attr-txt"><a class="sub-catagory"><p class="checkbox-container dn-attr-a" href="/_/N-1j7trbq?NO=0&amp;Ntt=+Boxes&amp;_=1731914997750&amp;jsonp=jQuery35105608915753228292_1731914997748" ctype="dynnav.Filter by Category.Track  Manage" title="Web Page"><input type="checkbox" id="category-checkbox-1"><label class="checkbox-label" for="category-checkbox">Web Page<span class="dn-attr-c">&nbsp;(1731)</span></label></p></a></div></li><li class="dn-attr-v"><div class="dn-attr-txt"><a class="sub-catagory"><p class="checkbox-container dn-attr-a" href="/_/N-ed5oc6?NO=0&amp;Ntt=+Boxes&amp;_=1731914997750&amp;jsonp=jQuery35105608915753228292_1731914997748" ctype="dynnav.Filter by Category.Track  Manage" title="PDF"><input type="checkbox" id="category-checkbox-2"><label class="checkbox-label" for="category-checkbox">PDF<span class="dn-attr-c">&nbsp;(644)</span></label></p></a></div></li><li class="dn-attr-v"><div class="dn-attr-txt"><a class="sub-catagory"><p class="checkbox-container dn-attr-a" href="/_/N-117i3k4?NO=0&amp;Ntt=+Boxes&amp;_=1731914997750&amp;jsonp=jQuery35105608915753228292_1731914997748" ctype="dynnav.Filter by Category.Track  Manage" title="Document"><input type="checkbox" id="category-checkbox-3"><label class="checkbox-label" for="category-checkbox">Document<span class="dn-attr-c">&nbsp;(301)</span></label></p></a></div></li><li class="dn-attr-v"><div class="dn-attr-txt"><a class="sub-catagory"><p class="checkbox-container dn-attr-a" href="/_/N-mvxvkm?NO=0&amp;Ntt=+Boxes&amp;_=1731914997750&amp;jsonp=jQuery35105608915753228292_1731914997748" ctype="dynnav.Filter by Category.Track  Manage" title="Spreadsheet"><input type="checkbox" id="category-checkbox-4"><label class="checkbox-label" for="category-checkbox">Spreadsheet<span class="dn-attr-c">&nbsp;(50)</span></label></p></a></div></li></ul><div class="dn-attr-hdr column-item" href="#"><h4><span class="dn-attr-hdr-txt" title="Filter by USPS Website">Filter by USPS Website</span></h4></div><ul id="attr_2" class="dn-attr collapse show"><li class="dn-attr-v"><span class="dn-overflow dn-inline-block" style="width: 86%;" title="All Results"><div class="dn-attr-txt"><a id="" class="allresults" href=""><p class="checkbox-container"><input type="checkbox" id="first-category-checkbox" checked=""><label class="checkbox-label selected" for="first-category-checkbox">All Websites</label></p></a></div></span></li><li class="dn-attr-v"><div class="dn-attr-txt"><a class="sub-catagory"><p class="checkbox-container dn-attr-a" href="/_/N-fi8m94?NO=0&amp;Ntt=+Boxes&amp;_=1731914997750&amp;jsonp=jQuery35105608915753228292_1731914997748" ctype="dynnav.Filter by Category.Track  Manage" title="USPS Corporate"><input type="checkbox" id="category-checkbox-1"><label class="checkbox-label" for="category-checkbox">USPS Corporate<span class="dn-attr-c">&nbsp;(21280)</span></label></p></a></div></li><li class="dn-attr-v"><div class="dn-attr-txt"><a class="sub-catagory"><p class="checkbox-container dn-attr-a" href="/_/N-1s41vaq?NO=0&amp;Ntt=+Boxes&amp;_=1731914997750&amp;jsonp=jQuery35105608915753228292_1731914997748" ctype="dynnav.Filter by Category.Track  Manage" title="Shop"><input type="checkbox" id="category-checkbox-2"><label class="checkbox-label" for="category-checkbox">Shop<span class="dn-attr-c">&nbsp;(839)</span></label></p></a></div></li><li class="dn-attr-v"><div class="dn-attr-txt"><a class="sub-catagory"><p class="checkbox-container dn-attr-a" href="/_/N-1v5b1db?NO=0&amp;Ntt=+Boxes&amp;_=1731914997750&amp;jsonp=jQuery35105608915753228292_1731914997748" ctype="dynnav.Filter by Category.Track  Manage" title="Postal Explorer"><input type="checkbox" id="category-checkbox-3"><label class="checkbox-label" for="category-checkbox">Postal Explorer<span class="dn-attr-c">&nbsp;(545)</span></label></p></a></div></li><li class="dn-attr-v"><div class="dn-attr-txt"><a class="sub-catagory"><p class="checkbox-container dn-attr-a" href="/_/N-1ajxrqy?NO=0&amp;Ntt=+Boxes&amp;_=1731914997750&amp;jsonp=jQuery35105608915753228292_1731914997748" ctype="dynnav.Filter by Category.Track  Manage" title="Business"><input type="checkbox" id="category-checkbox-4"><label class="checkbox-label" for="category-checkbox">Business<span class="dn-attr-c">&nbsp;(118)</span></label></p></a></div></li><li class="dn-attr-v"><div class="dn-attr-txt"><a class="sub-catagory"><p class="checkbox-container dn-attr-a" href="/_/N-e1mqzw?NO=0&amp;Ntt=+Boxes&amp;_=1731914997750&amp;jsonp=jQuery35105608915753228292_1731914997748" ctype="dynnav.Filter by Category.Track  Manage" title="International"><input type="checkbox" id="category-checkbox-5"><label class="checkbox-label" for="category-checkbox">International<span class="dn-attr-c">&nbsp;(8)</span></label></p></a></div></li><li class="dn-attr-v"><div class="dn-attr-txt"><a class="sub-catagory"><p class="checkbox-container dn-attr-a" href="/_/N-7458t?NO=0&amp;Ntt=+Boxes&amp;_=1731914997750&amp;jsonp=jQuery35105608915753228292_1731914997748" ctype="dynnav.Filter by Category.Track  Manage" title="Send"><input type="checkbox" id="category-checkbox-6"><label class="checkbox-label" for="category-checkbox">Send<span class="dn-attr-c">&nbsp;(8)</span></label></p></a></div></li><li class="dn-attr-v"><div class="dn-attr-txt"><a class="sub-catagory"><p class="checkbox-container dn-attr-a" href="/_/N-13mhpxm?NO=0&amp;Ntt=+Boxes&amp;_=1731914997750&amp;jsonp=jQuery35105608915753228292_1731914997748" ctype="dynnav.Filter by Category.Track  Manage" title="Receive"><input type="checkbox" id="category-checkbox-7"><label class="checkbox-label" for="category-checkbox">Receive<span class="dn-attr-c">&nbsp;(6)</span></label></p></a></div></li></ul></div>
+            <div class="faq-section desktop" style="display: inline-block;">
+                Looking for more answers?
+                <br>Visit our <a class="faq_link inline-link secondary" href="https://faq.usps.com/s/">FAQs</a>.
+            </div>
+        </div>
+        <div id="main_res" class="col-12 col-lg-7 form-group" style="display: inline-block;">
+            <div class="dn-bar mobile"><a class="dn-link" style="text-decoration: underline; color: #000;" href="/search?client=responsive_ecom&amp;output=xml_no_dtd&amp;proxystylesheet=responsive_ecom&amp;sort=date:D:L:d1&amp;wc=200&amp;wc_mc=1&amp;oe=UTF-8&amp;ie=UTF-8&amp;ud=1&amp;exclude_apps=1&amp;site=usps_com%7Cfaq%7Cabout%7Cpostal_explorer&amp;ulang=en&amp;access=p&amp;entqr=3&amp;entqrm=0&amp;filter=0&amp;ip=56.0.33.9&amp;entsp=a__e-commerce_policy&amp;q=priority+mail">All results</a></div>
+            <!--tro2-->
+            <div class="main-results">
+                <a class="show-filters mobile" href="#">
+                    <img src="https://www.usps.com/assets/images/search/left_arrow.png">Filter Results</a>
+                <div class="recommended-results">
+                    <a tabindex="-1" id="skipRecommended" href="#skipSearchResults" class="hidden-skip">Skip Recommended Results.</a>
+                    <span id="recommendedResults" class="recommended-results-heading">Most Relevant Results for <span class="searched_keyword"> Boxes</span></span>
+                    <ul id="KeyMatches"><li><a target="_blank" class="search-uspsRecommend" data-gtm-section="recommended-results" data-gtm-subsection="view-faqs" data-gtm-label=" Boxes" href="https://faq.usps.com/s/global-search/ Boxes">View FAQs for " Boxes"</a><a data-gtm-section="recommended-results" data-gtm-subsection="view-faqs" data-gtm-label=" Boxes" target="_blank" href="https://faq.usps.com/s/global-search/ Boxes" class="record-url col-xs-12 inline-link secondary">https://faq.usps.com/s/global-search/ Boxes</a></li></ul>
+                </div>
+                <hr>
+                <div class="search-results">
+                    <a tabindex="-1" id="skipSearchResults" href="#skipPagination" class="hidden-skip">Skip Search Results.</a>
+                    <span id="searchResultsHeading" class="search-results-heading">22904 results found for <span> " Boxes"</span></span>
+                    <ul id="records"><li class=" col-gl-12 col-md-12 result-item"><p class="g"><font style="display: none" size="-2"><b></b></font> <a ctype="c" rank="01" href=" https://www.usps.com/ship/online-shipping.htm"> <span id="title_20" class="l"><span class="" transid="gadget_20">Online Shipping &amp; Click-N-Ship | USPS</span></span></a> <b class=""></b><a href="https://www.usps.com/ship/online-shipping.htm" class="record-url col-xs-12 inline-link secondary">https://www.usps.com/ship/online-shipping.htm</a></p><table cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="s"><span id="snippet_20" class="" transid="gadget_20">Use Click-N-Ship to ship packages from your home or office. Learn about discounts when using enhanced Click-N-Ship service; order free boxes; print USPS Ground Advantage, Priority Mail, and Priority Mail Express postage and shipping labels; and schedule free package pickup.</span></td></tr></tbody></table></li><li class=" col-gl-12 col-md-12 result-item"><p class="g"><font style="display: none" size="-2"><b></b></font> <a ctype="c" rank="11" href=" https://www.usps.com/help/international-claims.htm"> <span id="title_21" class="l"><span class="" transid="gadget_21">File a USPS Claim: International | USPS</span></span></a> <b class=""></b><a href="https://www.usps.com/help/international-claims.htm" class="record-url col-xs-12 inline-link secondary">https://www.usps.com/help/international-claims.htm</a></p><table cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="s"><span id="snippet_21" class="" transid="gadget_21">Lost international packages, lost international mail, missing international package contents, and damaged international boxes can be eligible for reimbursement. You can create a claims case for insured or registered mailings, or COD shipments.</span></td></tr></tbody></table></li><li class=" col-gl-12 col-md-12 result-item"><p class="g"><font style="display: none" size="-2"><b></b></font> <a ctype="c" rank="21" href=" https://www.usps.com/manage/po-boxes.htm"> <span id="title_22" class="l"><span class="" transid="gadget_22">PO Boxes | USPS</span></span></a> <b class=""></b><a href="https://www.usps.com/manage/po-boxes.htm" class="record-url col-xs-12 inline-link secondary">https://www.usps.com/manage/po-boxes.htm</a></p><table cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="s"><span id="snippet_22" class="" transid="gadget_22">Use USPS PO Boxes for business or personal use. Learn how to reserve, rent, renew, and manage a PO Box online, as well as how much a PO Box costs.</span></td></tr></tbody></table></li><li class=" col-gl-12 col-md-12 result-item"><p class="g"><font style="display: none" size="-2"><b></b></font> <a ctype="c" rank="31" href=" https://www.usps.com/ship/apo-fpo-dpo.htm"> <span id="title_23" class="l"><span class="" transid="gadget_23">Military &amp; Diplomatic Mail | USPS</span></span></a> <b class=""></b><a href="https://www.usps.com/ship/apo-fpo-dpo.htm" class="record-url col-xs-12 inline-link secondary">https://www.usps.com/ship/apo-fpo-dpo.htm</a></p><table cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="s"><span id="snippet_23" class="" transid="gadget_23">USPS helps you ship to deployed military servicemembers with free military shipping kits, guidelines, help with customs forms, APO &amp; FPO address tips, shipping restriction lists by country, and free package pick-up when your box is ready to go.</span></td></tr></tbody></table></li><li class=" col-gl-12 col-md-12 result-item"><p class="g"><font style="display: none" size="-2"><b></b></font> <a ctype="c" rank="41" href=" https://www.usps.com/ship/priority-mail.htm"> <span id="title_24" class="l"><span class="" transid="gadget_24">Priority Mail | USPS</span></span></a> <b class=""></b><a href="https://www.usps.com/ship/priority-mail.htm" class="record-url col-xs-12 inline-link secondary">https://www.usps.com/ship/priority-mail.htm</a></p><table cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="s"><span id="snippet_24" class="" transid="gadget_24">Priority Mail, including Priority Mail Flat Rate shipping products, has fast shipping times (1, 2, or 3 business days) with flexible prices. Get free flat rate boxes and print postage labels online.</span></td></tr></tbody></table></li><li class=" col-gl-12 col-md-12 result-item"><p class="g"><font style="display: none" size="-2"><b></b></font> <a ctype="c" rank="51" href=" https://www.usps.com/international/international-how-to.htm"> <span id="title_25" class="l"><span class="" transid="gadget_25">Online Shipping &amp; Click-N-Ship International | USPS</span></span></a> <b class=""></b><a href="https://www.usps.com/international/international-how-to.htm" class="record-url col-xs-12 inline-link secondary">https://www.usps.com/international/international-how-to.htm</a></p><table cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="s"><span id="snippet_25" class="" transid="gadget_25">USPS ships to over 180 countries. Use Click-N-Ship to print international shipping labels with postage, complete customs forms, order free boxes, and request package pickups.</span></td></tr></tbody></table></li><li class=" col-gl-12 col-md-12 result-item"><p class="g"><font style="display: none" size="-2"><b></b></font> <a ctype="c" rank="61" href=" https://www.usps.com/ship/priority-mail-express.htm"> <span id="title_26" class="l"><span class="" transid="gadget_26">Priority Mail Express Shipping | USPS</span></span></a> <b class=""></b><a href="https://www.usps.com/ship/priority-mail-express.htm" class="record-url col-xs-12 inline-link secondary">https://www.usps.com/ship/priority-mail-express.htm</a></p><table cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="s"><span id="snippet_26" class="" transid="gadget_26">Priority Mail Express items, including Priority Mail Express Flat Rate shipping products, are delivered the next day to most U.S. locations. See USPS economical prices, free shipping boxes, and how to print postage labels online.</span></td></tr></tbody></table></li><li class=" col-gl-12 col-md-12 result-item"><p class="g"><font style="display: none" size="-2"><b></b></font> <a ctype="c" rank="71" href=" https://www.usps.com/business/manage-mail.htm"> <span id="title_27" class="l"><span class="" transid="gadget_27">Manage Your Business Mail | USPS</span></span></a> <b class=""></b><a href="https://www.usps.com/business/manage-mail.htm" class="record-url col-xs-12 inline-link secondary">https://www.usps.com/business/manage-mail.htm</a></p><table cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="s"><span id="snippet_27" class="" transid="gadget_27">USPS has convenient, cost-effective services so you can spend less time managing your mail and more time growing your business. Learn about PO boxes, business mail pickup, Informed Delivery, business mail forwarding, &amp; more.</span></td></tr></tbody></table></li><li class=" col-gl-12 col-md-12 result-item"><p class="g"><font style="display: none" size="-2"><b></b></font> <a ctype="c" rank="81" href=" https://www.usps.com/ship/packages.htm"> <span id="title_28" class="l"><span class="" transid="gadget_28">How to Prepare &amp; Send a Package | USPS</span></span></a> <b class=""></b><a href="https://www.usps.com/ship/packages.htm" class="record-url col-xs-12 inline-link secondary">https://www.usps.com/ship/packages.htm</a></p><table cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="s"><span id="snippet_28" class="" transid="gadget_28">Learn how to ship a package with USPS, from choosing the right mail service, packing your box, writing the address, calculating postage, and scheduling a pickup.</span></td></tr></tbody></table></li><li class=" col-gl-12 col-md-12 result-item"><p class="g"><font style="display: none" size="-2"><b></b></font> <a ctype="c" rank="91" href=" https://www.usps.com"> <span id="title_29" class="l"><span class="" transid="gadget_29">Welcome | USPS</span></span></a> <b class=""></b><a href="https://www.usps.com" class="record-url col-xs-12 inline-link secondary">https://www.usps.com</a></p><table cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="s"><span id="snippet_29" class="" transid="gadget_29">Welcome to USPS.com. Track packages, pay and print postage with Click-N-Ship, schedule free package pickups, look up ZIP Codes, calculate postage prices, and find everything you need for sending mail and shipping packages.</span></td></tr></tbody></table></li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 d-md-none result-list-wrapper">
+
+        <div class="col-5 col-md-3 result-per-page-wrapper">
+            <h4>Results per page:</h4>
+        </div>
+
+        <div class="col-4 result-select-wrapper">
+            <select class="form-control dropdown" id="result-per-page-num" style="border-color: rgb(0, 0, 0);"><option>10</option><option>20</option><option>30</option><option>40</option></select>
+        </div>
+
+    </div>
+    <a tabindex="-1" id="skipPagination" href="#endPagination" class="hidden-skip">Skip Pagination.</a>
+    <div id="bottom-navigation" class="col-12 form-group"><ul class="pagination"><li class="page-item first disabled"><a href="#" class="page-link">First</a></li><li class="page-item prev disabled"><a href="#" class="page-link">Previous</a></li><li class="page-item active"><a href="#" class="page-link">1</a></li><li class="page-item"><a href="#" class="page-link">2</a></li><li class="page-item"><a href="#" class="page-link">3</a></li><li class="page-item"><a href="#" class="page-link">4</a></li><li class="page-item"><a href="#" class="page-link">5</a></li><li class="page-item"><a href="#" class="page-link">6</a></li><li class="page-item"><a href="#" class="page-link">7</a></li><li class="page-item"><a href="#" class="page-link">8</a></li><li class="page-item"><a href="#" class="page-link">9</a></li><li class="page-item"><a href="#" class="page-link">10</a></li><li class="next"><a href="#" class="page-link">Next</a></li><li class="page-item last"><a href="#" class="page-link">Last</a></li></ul></div>
+    <a tabindex="-1" id="endPagination" class="hidden-skip">End of Pagination</a>
+
+
+
+</div>
+
+<!--END OF ENDECA SEARCH-->
+
+
+
+<!-- Start footer -->
+
+
+<div id="global-footer--wrap" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group global-footer--wrap">
+    <link type="text/css" rel="stylesheet" href="/global-elements/footer/css/main-sb.css">
+    <link type="text/css" rel="stylesheet" href="/global-elements/footer/css/footer-sb.css">
+
+    <!--[if lte IE 8]>
+    <link href="/global-elements/footer/css/main.ie.sb.css" rel="stylesheet" type="text/css" />
+    <link href="/global-elements/footer/css/footer.ie.sb.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!-- Styles to eliminate left nav -->
+    <style>
+
+        .page--left-nav .content {
+            margin-left: 0;
+            padding-left: 30px;
+        }
+        .left-nav {
+            display:none;
+        }
+    </style>
+    <!-- END Styles to eliminate left nav -->
+    <script type="text/javascript">
+        var MTIProjectId='f3e4655b-fd06-4b8b-8a25-01c859692612';
+        (function() {
+            var mtiTracking = document.createElement('script');
+            mtiTracking.type='text/javascript';
+            mtiTracking.async='true';
+            mtiTracking.src=('https:'==document.location.protocol?'https:':'http:')+'//fast.fonts.net/t/trackingCode.js';
+            (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild( mtiTracking );
+        })();
+    </script>
+    <footer class="global-footer">
+        <a href="https://www.usps.com/" class="global-footer--logo-link"></a>
+        <nav class="global-footer--navigation">
+            <ol style="display: inline;">
+                <li style="color:#333366;" class="global-footer--navigation-category">
+                    Helpful Links
+                    <ol class="global-footer--navigation-options">
+                        <li>
+                            <a href="https://www.usps.com/help/contact-us.htm">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="https://www.usps.com/globals/site-index.htm">Site Index</a>
+                        </li>
+                        <li>
+                            <a href="https://faq.usps.com/s/">FAQs</a></li>
+                        <li><a href="#" onclick="KAMPYLE_ONSITE_SDK.showForm(244)">Feedback</a>
+                        </li><li style="margin-top: 15px;width: 100%;color:#333366;" class="global-footer--navigation-category">
+                        USPS Jobs
+                        <ol class="global-footer--navigation-options">
+                            <li>
+                                <a href="https://about.usps.com/careers/">Careers</a>
+                            </li>
+                        </ol>
+                    </li>
+
+                    </ol>
+                </li>
+            </ol>
+            <ol style="display:inline;">
+                <li style="color:#333366;" class="global-footer--navigation-category">
+                    On About.USPS.com
+                    <ol class="global-footer--navigation-options">
+                        <li>
+                            <a href="https://about.usps.com/">About USPS Home</a>
+                        </li>
+                        <li>
+                            <a href="https://about.usps.com/newsroom/">Newsroom</a>
+                        </li>
+                        <li>
+                            <a href="https://about.usps.com/newsroom/service-alerts/">USPS Service Updates</a>
+                        </li>
+                        <li>
+                            <a href="https://about.usps.com/resources/">Forms &amp; Publications</a>
+                        </li>
+                        <li>
+                            <a href="https://about.usps.com/what/government-services/">Government Services</a>
+                        </li>
+                    </ol>
+                </li>
+                <li style="color:#333366;" class="global-footer--navigation-category">
+                    Other USPS Sites
+                    <ol class="global-footer--navigation-options">
+                        <li>
+                            <a href="https://gateway.usps.com/">Business Customer Gateway</a>
+                        </li>
+                        <li>
+                            <a href="https://www.uspis.gov/">Postal Inspectors</a>
+                        </li>
+                        <li>
+                            <a href="https://www.uspsoig.gov/">Inspector General</a>
+                        </li>
+                        <li>
+                            <a href="https://pe.usps.com">Postal Explorer</a>
+                        </li>
+                        <li>
+                            <a href="https://postalmuseum.si.edu/">National Postal Museum</a>
+                        </li>
+                        <li>
+                            <a href="https://www.usps.com/business/web-tools-apis/">Resources for Developers</a>
+                        </li>
+                        <li>
+                            <a href="https://postalpro.usps.com/">PostalPro</a>
+                        </li>
+                    </ol>
+                </li>
+                <li style="color:#333366;" class="global-footer--navigation-category">
+                    Legal Information
+                    <ol class="global-footer--navigation-options">
+                        <li>
+                            <a href="https://about.usps.com/who/legal/privacy-policy/">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="https://about.usps.com/who/legal/terms-of-use.htm">Terms of Use</a>
+                        </li>
+                        <li>
+                            <a href="https://about.usps.com/who/legal/foia/">FOIA</a>
+                        </li>
+                        <li>
+                            <a href="https://about.usps.com/who/legal/no-fear-act/">No FEAR Act/EEO Contacts</a>
+                        </li>
+                        <li>
+                            <a href="https://about.usps.com/who/legal/fair-chance-act/">Fair Chance Act</a>
+                        </li>
+                        <li>
+                            <a href="https://about.usps.com/who/legal/accessibility-statement/">Accessibility Statement</a>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </nav>
+
+        <div class="global-footer--copyright">Copyright © <script type="text/javascript">document.write(new Date().getFullYear());</script>2024 USPS.  All Rights Reserved.</div>
+
+        <ul class="global-footer--social">
+            <li>
+                <a target="_blank" style="text-decoration: none;" href="https://www.facebook.com/USPS?rf=108501355848630">
+                    <img alt="Image of Facebook social media icon." src="https://www.usps.com/global-elements/footer/images/facebook_logo.png">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" style="text-decoration: none;" href="https://www.instagram.com/uspostalservice/?hl=en">
+                    <img alt="Image of instagram social media icon." src="https://www.usps.com/global-elements/footer/images/instagram_logo.png">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" style="text-decoration: none;" href="http://www.pinterest.com/uspsstamps/">
+                    <img alt="Image of Pinterest social media icon." src="https://www.usps.com/global-elements/footer/images/pinterest_logo.png">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" style="text-decoration: none;" href="https://www.threads.net/@uspostalservice?hl=en">
+                    <img alt="Image of Threads social media icon." src="https://www.usps.com/global-elements/footer/images/threads_logo.png">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" style="text-decoration: none;" href="https://twitter.com/usps">
+                    <img alt="Image of X social media icon." src="https://www.usps.com/global-elements/footer/images/x_logo.png">
+                </a>
+            </li>
+
+            <li>
+                <a target="_blank" style="text-decoration: none;" href="https://www.youtube.com/usps">
+                    <img alt="Image of Youtube social media icon." src="https://www.usps.com/global-elements/footer/images/youtube_logo.png">
+                </a>
+            </li>
+        </ul>
+
+    </footer>
+</div>
+<style type="text/css">
+    footer.global-footer ol {
+      display: inline;
+    }
+    .global-footer--social li {
+        display: inline-block;
+        padding: 0 24px 0 0;
+        height: 19px;
+        line-height: 19px;
+        text-align: center;
+
+    }
+    .global-footer--social li a img {
+        width: 19px;
+          vertical-align: middle;
+        padding-bottom: 20px;
+    }
+    .global-footer--social li:nth-of-type(6) a img {
+        margin-top: 3px;
+    }
+</style>
+
+<script type="text/javascript">
+    var env = "prod";
+
+</script>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVCC8H" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MVCC8H');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager DAP-->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8WZCQ9B"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T8WZCQ9B');</script>
+<!-- End Google Tag Manager DAP-->
+
+
+<!-- End footer -->
+
+<script src="./lib/js/jquery-3.5.1.min.js"></script>
+<script src="./lib/js/jquery-ui.min.js"></script>
+<script src="./lib/js/popper.min.js"></script>
+<script src="./lib/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="./lib/js/tether-1.2.0-js-tether.min.js"></script>
+<script src="./lib/js/jquery.twbsPagination.js"></script>
+<script src="./data/searchAutoCompleteData.js"></script>
+<script src="./js/utilities-min.js"></script>
+<script src="./js/core-min-v3.js"></script>
+<script src="./js/ui-Auto-complete-min.js"></script>
+<script src="./js/search-min-v3.js"></script>
+
+
+<ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="width: 999.987px; top: 173.4px; left: 259.6px; display: none;"><li class="ui-menu-item"><div id="ui-id-2" tabindex="-1" class="ui-menu-item-wrapper">flat rate<b class="ui-autocomplete-highlight"> boxes<b></b></b></div></li><li class="ui-menu-item"><div id="ui-id-3" tabindex="-1" class="ui-menu-item-wrapper">po<b class="ui-autocomplete-highlight"> boxes<b></b></b></div></li></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"><div>2 results are available, use up and down arrow keys to navigate.</div></div><script id="_fed_an_ua_tag" text="" charset="" type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=USPS&amp;yt=true"></script><script type="text/javascript" id="" charset="">document.cookie="usps_gtm_helper\x3d; Max-Age\x3d-99999999; path\x3d/; domain\x3dusps.com";document.cookie="b_entRegDetails\x3d; Max-Age\x3d-99999999; path\x3d/; domain\x3dusps.com";</script><script type="text/javascript" id="" charset="">(function(){window.__piiRedact=window.__piiRedact||!1;var k=function(a){var b=[{name:"EMAIL",regex:/(?=.*[a-zA-Z])[a-zA-Z0-9+_.-]{3,}(@|%40)[a-zA-Z0-9+_.-]{4,}/gi,group:""},{name:"SELF-EMAIL",regex:/(?=.*[a-zA-Z])[^\/]{4}(@|%40)(?!example\.com)[^\/]{4}/gi,group:""},{name:"TEL",regex:/((tel=)|(telephone=)|(phone=)|(mobile=)|(mob=))[\d\+\s][^&\/\?]+/gi,group:"$1"},{name:"NAME",regex:/((firstname=)|(lastname=)|(surname=)|(fname=)|(lname=))[^&\/\?]+/gi,group:"$1"},{name:"PASSWORD",regex:/((password=)|(passwd=)|(pass=))[^&\/\?]+/gi,
+group:"$1"},{name:"USERNAME",regex:/((username=)|(name=))[^&\/\?]+/gi,group:"$1"},{name:"ADDRESS",regex:/((address=)|(address1=)|(address2=))[^&\/\?]+/gi,group:"$1"},{name:"TRACKING",regex:/((selectedTrckNum=)|([a-z]*tLabels?1?=)|(qtc_t_labels=)|(labelBarcode=)|(qtc_tLabels1=)|(FselectedTrckNum%3D)|([a-z]*tLabels?1?%3D)|(labelBarcode%3D))([^&\/\?%])+/gi,group:"$1"},{name:"ZIP",regex:/((selectedZip11=)|(currentZip11=)|(selectedzip11=)|(currentzip11=)|([a-z]*zip11=)|(urbanCode=)|(postalCode=)|([a-z]*zip11\\%3D))[^&\/\?%]+/gi,
+group:"$1"}],d=function(c){return(c||document.location.search).replace(/(^\?)/,"").split("\x26").map(function(f){return f=f.split("\x3d"),this[f[0]]=decodeURIComponent(f[1]),this}.bind({}))[0]},g=function(c){return Object.keys(c).map(function(f){return f+"\x3d"+encodeURIComponent(c[f])}).join("\x26")},e=d(a),h;for(h in e)b.forEach(function(c){e[h].match(c.regex)&&(e[h]=e[h].replace(c.regex,c.group+"[REDACTED "+c.name+"]"))});return g(e)};if(!window.__piiRedact){window.__piiRedact=!0;try{var l=window.navigator.sendBeacon;
+window.navigator.sendBeacon=function(){if(arguments&&arguments[0].match(/google-analytics\.com.*v=2&/)){var a=arguments[0].split("?")[0],b=arguments[0].split("?")[1];b=k(b);var d=[];arguments[1]&&arguments[1].split("\r\n").forEach(function(g){d.push(k(g))});arguments[0]=[a,b].join("?");arguments[1]&&d.length>0&&(arguments[1]=d.join("\r\n"))}return l.apply(this,arguments)};var m=window.fetch;window.fetch=function(){var a=Array.prototype.slice.call(arguments);console.log("args");console.log(a);if(a&&
+a[0].match(/google-analytics\.com.*v=2&/)){var b=new URL(a[0]),d=queryString2Object(b.search);d=k(b.search);b.search=Object2QueryString(d);a[0]=b.toString();if(a[1]&&a[1].body)if(b=a[1].body,typeof b==="string")a[1].body=k(b);else if(b instanceof URLSearchParams){var g=new URLSearchParams(b);g.forEach(function(e,h){g.set(h,k(e));console.log("pii");console.log(e)});a[1].body=g.toString()}}return m.apply(this,a)}}catch(a){l&&(window.navigator.sendBeacon=l),m&&(window.fetch=m)}}})();</script><script type="text/javascript" id="gtm-scroll-tracking" charset="">(function(h,l,a){function q(){if(!h.querySelector||!h.body.getBoundingClientRect)return!1;a.dataLayerName=a.dataLayerName||"dataLayer";a.distances=a.distances||{};u();r(l,"scroll",y(u,500))}function v(k,a,f,b,d){var e;for(e=0;e<a.length;e++){var c=parseInt(a[e],10),g="%"!==f?c+d:c/100*b+d;c+=f;g<=b+d&&(k[c]=g)}return k}function w(a,g){var k=parseInt(a,10),b=g/k,d=[],e;for(e=1;e<b+1;e++)d.push(e*k);return d}function u(){var k=x(a.bottom),g=x(a.top);var f=h.body;var b=h.documentElement;f=Math.max(f.scrollHeight,
+f.offsetHeight,b.clientHeight,b.scrollHeight,b.offsetHeight);g&&(f-=g);k&&(f=k-(g||0));f-=5;b=g||0;var d=z()||{},e=[],c=[],m;if(a.distances.percentages&&(a.distances.percentages.each&&(e=e.concat(a.distances.percentages.each)),a.distances.percentages.every))for(m=0;m<a.distances.percentages.every.length;m++)e=w(a.distances.percentages.every[m],100),e=c.concat(e);if(a.distances.pixels&&(a.distances.pixels.each&&(c=c.concat(a.distances.pixels.each)),a.distances.pixels.every))for(m=0;m<a.distances.pixels.every.length;m++){var A=
+w(a.distances.pixels.every[m],f);c=c.concat(A)}d=v(d,e,"%",f,b);f=d=v(d,c,"px",f,b);b=void 0!==l.pageXOffset;d="CSS1Compat"===(h.compatMode||"");b=b?l.pageYOffset:d?h.documentElement.scrollTop:h.body.scrollTop;b=parseInt(b,10);d=parseInt;c="CSS1Compat"===h.compatMode?h.documentElement:h.body;c=c.clientHeight;b+=d(c,10);for(var p in f)if(d=f[p],b>d&&!n[p]&&d<(k||Infinity)&&d>(g||0))if(n[p]=!0,d=p,c=l.GoogleAnalyticsObject,"undefined"===typeof l[a.dataLayerName]||a.forceSyntax)if("function"===typeof l[c]&&
+"function"===typeof l[c].getAll&&2!==a.forceSyntax)l[c]("send","event",a.category,d,a.label,{nonInteraction:1});else"undefined"!==typeof l._gaq&&1!==a.forceSyntax&&l._gaq.push(["_trackEvent",a.category,d,a.label,0,!0]);else l[a.dataLayerName].push({event:"scrollTracking",attributes:{distance:d,label:a.label}})}function x(a){if("number"===typeof a||parseInt(a,10))return parseInt(a,10);try{var k=1===a.nodeType?a:h.querySelector(a);return t(k)}catch(f){}}function y(a,g){var k,b,d,e=null,c=0,h=function(){c=
+new Date;e=null;d=a.apply(k,b)};return function(){var f=new Date;c||(c=f);var m=g-(f-c);k=this;b=arguments;0>=m?(clearTimeout(e),e=null,c=f,d=a.apply(k,b)):e||(e=setTimeout(h,m));return d}}function r(a,g,f){if(a.addEventListener)a.addEventListener(g,f);else if(a.attachEvent)a.attachEvent("on"+g,function(b){f.call(a,b)});else if("undefined"===typeof a["on"+g]||null===a["on"+g])a["on"+g]=function(b){f.call(a,b)}}function t(a){a=a.getBoundingClientRect().top;var k=void 0!==l.pageYOffset?l.pageYOffset:
+(h.documentElement||h.body.parentNode||h.body).scrollTop;return a+k}var n={};!a.distances.percentages||!a.distances.percentages.every||a.distances.percentages.every instanceof Array||(a.distances.percentages.every=[a.distances.percentages.every]);!a.distances.pixels||!a.distances.pixels.every||a.distances.pixels.every instanceof Array||(a.distances.pixels.every=[a.distances.pixels.every]);var z=function(a){function g(){var d,e,c;f={};if(a.each)for(c=0;c<a.each.length;c++){var b=a.each[c];n[b]||(d=
+h.querySelector(b))&&(f[b]=t(d))}if(a.every)for(c=0;c<a.every.length;c++){b=a.every[c];var g=h.querySelectorAll(b);if(g.length&&!n[b+":"+(g.length-1)])for(e=0;e<g.length;e++){var k=b+":"+e;n[k]||(d=g[e],f[k]=t(d))}}}if(a){var f={},b=0;g();return function(){var a={},e;b++;10<b&&(g(),b=0);for(e in f)a[e]=f[e];return a}}}(a.distances.elements);"loading"!==h.readyState?q():h.addEventListener?r(h,"DOMContentLoaded",q):r(l,"load",q)})(document,window,{forceSyntax:!1,dataLayerName:!1,distances:{percentages:{each:[10,
+90],every:[25]},pixels:{each:[],every:[]},elements:{each:[],every:[]}},top:null,bottom:null,category:"Scroll Tracking",label:document.location.pathname});</script><script type="text/javascript" id="" charset="">Element.prototype.matches||(Element.prototype.matches=Element.prototype.matchesSelector||Element.prototype.mozMatchesSelector||Element.prototype.msMatchesSelector||Element.prototype.oMatchesSelector||Element.prototype.webkitMatchesSelector||function(a){a=(this.document||this.ownerDocument).querySelectorAll(a);for(var b=a.length;0<=--b&&a.item(b)!==this;);return-1<b});</script><script type="text/javascript" id="" charset="">dataLayer.push({event:"Medallia_survey_language",Medallia:{survey_language:google_tag_manager["rm"]["2384666"](64)}});var medalliaSurveyLanguage=google_tag_manager["rm"]["2384666"](65);</script><script type="text/javascript" id="" charset="">(function(){try{var b=google_tag_manager["rm"]["2384666"](67);if(b.includes("false")){var c=localStorage.getItem("ga_client_id"),d=JSON.parse(c),e=d.clientId,a=new Date;a.setTime(a.getTime()+864E5);a.toUTCString();document.cookie="_ga\x3d"+e+";path\x3d/;domain\x3d.usps.com"}}catch(f){return console.log("No _ga cookie found.",f.message),"N/A"}})();</script><script type="text/javascript" id="" charset="">(function(){var a=document.querySelector("#searchInput");a&&a&&a.addEventListener("keyup",function(a){13===a.keyCode&&window.dataLayer.push({event:"enterToSearch",enterElement:a.target})},!0)})();</script><script type="text/javascript" id="" charset="">dataLayer.push({medallia_ab:google_tag_manager["rm"]["2384666"](75)});</script><iframe height="0" width="0" style="display: none; visibility: hidden;" data-gtm-yt-inspected-98="true" data-gtm-yt-inspected-112="true"></iframe><script id="" text="</div>" charset="" type="text/javascript" src="https://resources.digital-cloud-gov.medallia.com/wdcgov/2/onsite/embed.js"></script><script type="text/javascript" async="" src="https://resources.digital-cloud-gov.medallia.com/wdcgov/2/onsite/generic1728577051306.js" charset="UTF-8"></script><style title="MDigital_animationStyle"></style><span id="kampyleButtonContainer"><button id="nebula_div_btn" style="border: none; position: fixed !important; bottom: 120.1px;" alt="Feedback" tabindex="0" class="kampyle_vertical_button kampyle_right  wcagOutline "><div class="kampyle_button"></div><div data-aut="feedback" class="kampyle_button-text">Feedback</div></button></span><span id="MDigitalLightboxWrapper"><div id="kampyleFormContainer" style="top:0 !important;left:0 !important;width: 100% !important;height: 100% !important;position: fixed !important;visibility:hidden !important;display:table !important;background-color: rgba(102,102,102,0.4) !important;z-index:99999999 !important;-webkit-overflow-scrolling: touch !important; "> <div id="innerContainer">   <div id="kampyleFormModal" style="z-index:99999999 !important; -webkit-overflow-scrolling: touch !important;"><iframe id="kampyleForm244" src="https://resources.digital-cloud-gov.medallia.com/md-form/website/1.16.2/index.html?formId=244&amp;type=live&amp;isMobile=false&amp;referrer=https%3A%2F%2Fwww.usps.com%2Fsearch%2Fresults.htm&amp;region=digital-cloud-gov&amp;isWCAG=true&amp;displayType=lightbox&amp;isSeparateFormTemplateFromData=true&amp;domainsListRelativePath=..%7C..%7C..%7Cwdcgov%2F2%2Fonsite" tabindex="-1" title="Feedback Survey" data-gtm-yt-inspected-98="true" data-gtm-yt-inspected-112="true" style="border: 0px !important; height: 100% !important; max-height: 100% !important; min-height: 100% !important; width: 100% !important; max-width: 100% !important; min-width: 100% !important; display: none !important; position: fixed !important;" origin="https://resources.digital-cloud-gov.medallia.com"></iframe></div> <div id="MDigital_spinnerContainer" class="neb-loading-spinner" style="display: none; height: 100% !important; z-index: 2147483647 !important; position: absolute !important; width: 100% !important; top: 0px !important;"><div id="MDigital_spinnerCircle" style="border-width: 4px !important; border-style: solid !important; border-color: rgb(64, 80, 198) rgb(243, 243, 243) rgb(243, 243, 243) !important; border-image: initial !important; border-radius: 50% !important; width: 40px !important; height: 40px !important; margin-top: 5px !important; margin-right: 5px !important; top: calc(50% - 24px) !important; left: calc(50% - 24px) !important; position: relative !important; animation: 1s linear 0s infinite normal none running MDigital_spin !important;"></div></div></div></div></span></body></html>

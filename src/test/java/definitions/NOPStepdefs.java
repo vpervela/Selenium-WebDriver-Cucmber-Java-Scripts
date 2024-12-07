@@ -1,5 +1,6 @@
 package definitions;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -8,15 +9,20 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import pages.*;
 import support.DriverFactory;
 
+import javax.swing.*;
 import java.time.Duration;
 import java.util.HashMap;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class NOPStepdefs {
 
     HashMap<String, String> user;
+    String mainWindow;
 
     WebDriver driver = DriverFactory.getDriver();
 
@@ -28,12 +34,14 @@ public class NOPStepdefs {
     NOPCart nopCart = new NOPCart();
 
     public NOPStepdefs() {
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15
-        ));
+        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+       // driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
     }
 
     @Given("I am on the nopCommerce homepage")
     public void iAmOnTheNopCommerceHomepage() {
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+       // driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
         driver.get("https://nop-qa.portnov.com/");
     }
 
@@ -71,12 +79,14 @@ public class NOPStepdefs {
 //            throw new IllegalArgumentException("Invalid subcategory: " + subcategory);
 //        }
         nopHome.clickSubcategory(subcategory);
+
     }
 
 
     @Given("I am on the registration page")
     public void iAmOnTheRegistrationPage() {
-
+        //driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         nopRegister.openURL();
     }
 
@@ -143,6 +153,65 @@ public class NOPStepdefs {
     public void iProceedToTheCheckoutPage() {
         nopCart.acceptTerms();
         nopCart.clickCheckout();
+    }
+
+    @And("I select RAM as {string} for Desktop")
+    public void iSelectRAMAsForDesktop(String ram) {
+        nopProduct.selectRAM(ram);
+
+    }
+ //windows handling
+    @When("I click on the {string} link in the footer")
+    public void iClickOnTheLinkInTheFooter(String socials) throws InterruptedException {
+        this.mainWindow = nopHome.getMainWindowHandle();
+        nopHome.clickSocials(socials.toLowerCase());
+        Thread.sleep(5000);
+
+    }
+
+    @Then("I should be redirected to the {string} page")
+    public void iShouldBeRedirectedToThePage(String social) {
+        nopHome.switchToWindow();
+        nopHome.verifyTitle(social);
+    }
+
+    @When("I close the new tab")
+    public void iCloseTheNewTab() throws InterruptedException {
+        //driver.close();
+        nopHome.closeWindow();
+       // Thread.sleep(5000);
+        
+    }
+
+    @Then("I should return back to nopCommerce homepage")
+    public void iShouldReturnBackToNopCommerceHomepage() {
+        driver.switchTo().window(mainWindow);
+       // nopHome.switchToWindow(mainWindow);
+        nopHome.verifyTitle();
+
+    }
+
+    @When("I hover over the {string} category tab")
+    public void iHoverOverTheCategoryTab(String category) throws InterruptedException {
+        nopHome.hoverOverElement(category);
+        Thread.sleep(5000);
+
+    }
+
+
+    @Then("I should see subcategory:$")
+    public void iShouldSeeSubcategory(DataTable subcategory) {
+        //converts data table to list of categories that can loop through
+        List<String> subcategories = subcategory.asList(String.class);
+        for (String sub: subcategories){
+            nopHome.verifySubcategory(sub);
+        }
+
+    }
+
+    @When("I click and wait for Shopping Cart")
+    public void iClickAndWaitForShoppingCart() {
+        nopHome.clickVerifyShoppingCart();
     }
 }
 

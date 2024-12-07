@@ -16,6 +16,7 @@ public class NOPCart extends Page {
 
     @FindBy(id = "checkout")
     private WebElement checkoutButton;
+
     //methods
     public void acceptTerms() {
         termsOfServiceCheckbox.click();
